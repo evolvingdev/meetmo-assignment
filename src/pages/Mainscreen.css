@@ -1,11 +1,14 @@
+
 .mainScreen {
-  background-color: #0c0a09;
+  /* background-color: #0c0a09; */
   width: 436px;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url(/src/assets/backgroundimagemeetmo.jpeg);
+  
 }
 h1 {
   color: #ffff;
@@ -42,7 +45,7 @@ h1 {
   border-radius: 42px;
   background-color: #0c0a09;
   animation-name: drawerTransition;
-  animation-duration: .8s;
+  animation-duration: 0.8s;
   animation-timing-function: ease;
   box-shadow: rgb(231, 232, 233) 50px 50px 130px -10px;
   display: flex;
