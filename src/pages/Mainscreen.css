@@ -34,7 +34,7 @@ h1 {
   cursor: pointer;
 }
 .drawer {
-  height: 58%;
+  height: 68%;
   width: 436px;
   display: block;
   position: absolute;
@@ -57,7 +57,7 @@ h1 {
     box-shadow: none;
   }
   to {
-    height: 58%;
+    height: 68%;
   }
 }
 .hideDrawer {
