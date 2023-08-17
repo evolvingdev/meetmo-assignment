@@ -42,7 +42,7 @@ h1 {
   border-radius: 42px;
   background-color: #0c0a09;
   animation-name: drawerTransition;
-  animation-duration: 1s;
+  animation-duration: .8s;
   animation-timing-function: ease;
   box-shadow: rgb(231, 232, 233) 50px 50px 130px -10px;
   display: flex;
