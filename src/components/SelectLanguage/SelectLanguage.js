@@ -8,7 +8,7 @@ import germany from "../../assets/germany.png";
 import japan from "../../assets/japan.png";
 
 function SelectLanguage() {
-  const [country, setCountry] = useState(null);
+  // const [country, setCountry] = useState(null);
   const [selected, setSelected] = useState(true);
   return (
     <div className="languageContainer">
