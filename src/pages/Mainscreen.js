@@ -6,9 +6,14 @@ import settingsicon from "../assets/settings.svg";
 import arrow from "../assets/next.png";
 function MainScreen() {
   const [showDrawer, setShowDrawer] = useState(false);
-  const [fontSelectedTab, setFontSelectedTab] = useState(false);
+  const [fontSelectedTab, setFontSelectedTab] = useState({
+    first: false,
+    second: false,
+    third: false,
+    fourth: false,
+  });
   return (
-    <div className="mainScreen">
+    <div className={showDrawer ? "mainScreenWithWorldMap" : "mainScreen"}>
       <div className="contentContainer">
         <h1>Welcome</h1>
         <h1>Select Language</h1>
@@ -77,35 +82,43 @@ function MainScreen() {
         </div>
         <div className="selectContainer">
           <div
-            className={fontSelectedTab ? "fontSelectedTab" : "fontSelectTab"}
+            className={
+              fontSelectedTab.first ? "fontSelectedTab" : "fontSelectTab"
+            }
             onClick={() => {
-              fontSelectedTab
-                ? setFontSelectedTab(false)
-                : setFontSelectedTab(true);
+              fontSelectedTab.first
+                ? setFontSelectedTab({ ...fontSelectedTab, first: false })
+                : setFontSelectedTab({ ...fontSelectedTab, first: true });
             }}
           ></div>
           <div
-            className={fontSelectedTab ? "fontSelectedTab" : "fontSelectTab"}
+            className={
+              fontSelectedTab.second ? "fontSelectedTab" : "fontSelectTab"
+            }
             onClick={() => {
-              fontSelectedTab
-                ? setFontSelectedTab(false)
-                : setFontSelectedTab(true);
+              fontSelectedTab.second
+                ? setFontSelectedTab({ ...fontSelectedTab, second: false })
+                : setFontSelectedTab({ ...fontSelectedTab, second: true });
             }}
           ></div>
           <div
-            className={fontSelectedTab ? "fontSelectedTab" : "fontSelectTab"}
+            className={
+              fontSelectedTab.third ? "fontSelectedTab" : "fontSelectTab"
+            }
             onClick={() => {
-              fontSelectedTab
-                ? setFontSelectedTab(false)
-                : setFontSelectedTab(true);
+              fontSelectedTab.third
+                ? setFontSelectedTab({ ...fontSelectedTab, third: false })
+                : setFontSelectedTab({ ...fontSelectedTab, third: true });
             }}
           ></div>
           <div
-            className={fontSelectedTab ? "fontSelectedTab" : "fontSelectTab"}
+            className={
+              fontSelectedTab.fourth ? "fontSelectedTab" : "fontSelectTab"
+            }
             onClick={() => {
-              fontSelectedTab
-                ? setFontSelectedTab(false)
-                : setFontSelectedTab(true);
+              fontSelectedTab.fourth
+                ? setFontSelectedTab({ ...fontSelectedTab, fourth: false })
+                : setFontSelectedTab({ ...fontSelectedTab, fourth: true });
             }}
           ></div>
         </div>

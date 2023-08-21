@@ -1,6 +1,13 @@
-
 .mainScreen {
-  /* background-color: #0c0a09; */
+  background-color: #0c0a09;
+  width: 436px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainScreenWithWorldMap {
   width: 436px;
   height: 100vh;
   display: flex;
@@ -8,7 +15,7 @@
   justify-content: center;
   flex-direction: column;
   background-image: url(/src/assets/backgroundimagemeetmo.jpeg);
-  
+  background-size: cover;
 }
 h1 {
   color: #ffff;
